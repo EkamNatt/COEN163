@@ -5,11 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Support - Waste Management AI Tool</title>
-    <style>
-        label[for="message"] {
-            margin-top: 10px;
-        }
-    </style>
 </head>
 <body>
     <header>
@@ -36,8 +31,9 @@
                 <label for="subject">Subject:</label>
                 <input type="text" id="subject" name="subject" required>
                 
-                <label for="message">Message:</label>
+               <label for="message" style="margin-top: 20px;">Message:</label>
                 <textarea id="message" name="message" required rows="6" style="width: 100%;"></textarea> <!-- Adjusted rows and width -->
+                
                 
                 
                 <button type="submit">Send</button>
