@@ -88,3 +88,10 @@ footer {
     }
 }
 
+#tech-desc img {
+    width: 50%; /* Adjusts the width to half of the container's size */
+    height: auto; /* Maintains the aspect ratio */
+    display: block; /* Ensures the image is centered if necessary */
+    margin: 0 auto; /* Centers the image horizontally */
+}
+
