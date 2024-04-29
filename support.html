@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Support - Waste Management AI Tool</title>
+    <style>
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -22,20 +28,22 @@
             <h1>Contact Support</h1>
             <p>If you have any questions or need assistance, please fill out the form below and our support team will get back to you as soon as possible.</p>
             <form action="/submit-support-query" method="POST">
-                <label for="name">Your Name:</label>
-                <input type="text" id="name" name="name" required>
-                
-                <label for="email">Your Email:</label>
-                <input type="email" id="email" name="email" required>
-                
-                <label for="subject">Subject:</label>
-                <input type="text" id="subject" name="subject" required>
-                
-               <label for="message" style="margin-bottom: 20px;">Message:</label>
-                <textarea id="message" name="message" required rows="6" style="width: 100%;"></textarea> <!-- Adjusted rows and width -->
-                
-                
-                
+                <div class="form-group">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+                <div class="form-group">
+                    <label for="message" style="margin-top: 20px;">Message:</label>
+                    <textarea id="message" name="message" required rows="6" style="width: 100%;"></textarea>
+                </div>
                 <button type="submit">Send</button>
             </form>
             <img src="https://www.google.com/imgres?q=team%20of%20people%20in%20tech&imgurl=https%3A%2F%2Fimageio.forbes.com%2Fspecials-images%2Fimageserve%2F64f0d2b5b3d9ed70f085cc99%2Fdiverse-team-working-together%2F960x0.jpg%3Fformat%3Djpg%26width%3D960&imgrefurl=https%3A%2F%2Fwww.forbes.com%2Fsites%2Fforbestechcouncil%2F2023%2F09%2F01%2F18-tech-leaders-on-the-importance-of-diversity-in-tech-development%2F&docid=Nwv2Bjc313AgSM&tbnid=Bh9sDr_MxQ4R0M&vet=12ahUKEwiXvv3Kv-iFAxVmADQIHTW5Bu8QM3oECBsQAA..i&w=958&h=639&hcb=2&ved=2ahUKEwiXvv3Kv-iFAxVmADQIHTW5Bu8QM3oECBsQAA" alt="Description of your image">
