@@ -87,3 +87,33 @@ footer {
         flex-direction: column;
     }
 }
+* {
+    box-sizing: border-box; /* Includes padding and border in the width and height of elements */
+}
+
+article {
+    width: 100%; /* Ensures that each article uses the full available width */
+    max-width: 800px; /* Restricts the maximum width for better readability */
+    margin: 20px auto; /* Centers the articles horizontally and adds vertical space */
+    padding: 20px; /* Adds internal spacing */
+    background-color: #fff; /* Sets a contrasting background */
+    border-radius: 5px; /* Optional: Adds rounded corners */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1); /* Optional: Adds subtle shadow for depth */
+    text-align: left; /* Aligns text to the left */
+}
+
+main {
+    width: 100%; /* Ensures the main container uses the full width of the viewport */
+    align-items: center; /* Centers its children horizontally in the flex container */
+    justify-content: center; /* Centers content vertically if there's extra space */
+    padding: 20px; /* Adds padding around the content */
+    box-sizing: border-box; /* Ensures padding is included in the width calculation */
+}
+
+/* Additional tweak to ensure responsiveness on smaller screens */
+@media (max-width: 768px) {
+    article {
+        padding: 10px; /* Reduces padding on smaller screens */
+        margin: 10px auto; /* Reduces margin on smaller screens */
+    }
+}
